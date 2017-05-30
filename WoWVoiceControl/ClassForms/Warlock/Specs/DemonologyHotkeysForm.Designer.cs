@@ -36,11 +36,15 @@
             this.bDemonwrath = new System.Windows.Forms.Button();
             this.bSummonFelguard = new System.Windows.Forms.Button();
             this.bAccept = new System.Windows.Forms.Button();
+            this.abilitiesDataGridView = new System.Windows.Forms.DataGridView();
+            this.abilityNameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.keybindColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.abilitiesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // bShadowBolt
             // 
-            this.bShadowBolt.Location = new System.Drawing.Point(93, 4);
+            this.bShadowBolt.Location = new System.Drawing.Point(441, 46);
             this.bShadowBolt.Name = "bShadowBolt";
             this.bShadowBolt.Size = new System.Drawing.Size(136, 23);
             this.bShadowBolt.TabIndex = 0;
@@ -50,7 +54,7 @@
             // 
             // bHandOfGulDan
             // 
-            this.bHandOfGulDan.Location = new System.Drawing.Point(93, 33);
+            this.bHandOfGulDan.Location = new System.Drawing.Point(441, 75);
             this.bHandOfGulDan.Name = "bHandOfGulDan";
             this.bHandOfGulDan.Size = new System.Drawing.Size(136, 23);
             this.bHandOfGulDan.TabIndex = 1;
@@ -60,7 +64,7 @@
             // 
             // bDemonicEmpowerment
             // 
-            this.bDemonicEmpowerment.Location = new System.Drawing.Point(93, 62);
+            this.bDemonicEmpowerment.Location = new System.Drawing.Point(441, 104);
             this.bDemonicEmpowerment.Name = "bDemonicEmpowerment";
             this.bDemonicEmpowerment.Size = new System.Drawing.Size(136, 23);
             this.bDemonicEmpowerment.TabIndex = 2;
@@ -70,7 +74,7 @@
             // 
             // bCallDreadstalkers
             // 
-            this.bCallDreadstalkers.Location = new System.Drawing.Point(93, 90);
+            this.bCallDreadstalkers.Location = new System.Drawing.Point(441, 132);
             this.bCallDreadstalkers.Name = "bCallDreadstalkers";
             this.bCallDreadstalkers.Size = new System.Drawing.Size(136, 23);
             this.bCallDreadstalkers.TabIndex = 3;
@@ -80,7 +84,7 @@
             // 
             // bDoom
             // 
-            this.bDoom.Location = new System.Drawing.Point(93, 119);
+            this.bDoom.Location = new System.Drawing.Point(441, 161);
             this.bDoom.Name = "bDoom";
             this.bDoom.Size = new System.Drawing.Size(136, 23);
             this.bDoom.TabIndex = 4;
@@ -90,7 +94,7 @@
             // 
             // bDemonwrath
             // 
-            this.bDemonwrath.Location = new System.Drawing.Point(93, 148);
+            this.bDemonwrath.Location = new System.Drawing.Point(441, 190);
             this.bDemonwrath.Name = "bDemonwrath";
             this.bDemonwrath.Size = new System.Drawing.Size(136, 23);
             this.bDemonwrath.TabIndex = 5;
@@ -100,7 +104,7 @@
             // 
             // bSummonFelguard
             // 
-            this.bSummonFelguard.Location = new System.Drawing.Point(93, 177);
+            this.bSummonFelguard.Location = new System.Drawing.Point(441, 219);
             this.bSummonFelguard.Name = "bSummonFelguard";
             this.bSummonFelguard.Size = new System.Drawing.Size(136, 23);
             this.bSummonFelguard.TabIndex = 6;
@@ -110,7 +114,7 @@
             // 
             // bAccept
             // 
-            this.bAccept.Location = new System.Drawing.Point(93, 226);
+            this.bAccept.Location = new System.Drawing.Point(95, 284);
             this.bAccept.Name = "bAccept";
             this.bAccept.Size = new System.Drawing.Size(136, 23);
             this.bAccept.TabIndex = 7;
@@ -118,11 +122,41 @@
             this.bAccept.UseVisualStyleBackColor = true;
             this.bAccept.Click += new System.EventHandler(this.bAccept_Click);
             // 
+            // abilitiesDataGridView
+            // 
+            this.abilitiesDataGridView.AllowUserToAddRows = false;
+            this.abilitiesDataGridView.AllowUserToDeleteRows = false;
+            this.abilitiesDataGridView.AllowUserToResizeColumns = false;
+            this.abilitiesDataGridView.AllowUserToResizeRows = false;
+            this.abilitiesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.abilitiesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.abilitiesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.abilityNameColumn,
+            this.keybindColumn});
+            this.abilitiesDataGridView.Location = new System.Drawing.Point(12, 12);
+            this.abilitiesDataGridView.Name = "abilitiesDataGridView";
+            this.abilitiesDataGridView.RowHeadersVisible = false;
+            this.abilitiesDataGridView.Size = new System.Drawing.Size(309, 266);
+            this.abilitiesDataGridView.TabIndex = 50;
+            // 
+            // abilityNameColumn
+            // 
+            this.abilityNameColumn.HeaderText = "Ability";
+            this.abilityNameColumn.Name = "abilityNameColumn";
+            this.abilityNameColumn.ReadOnly = true;
+            // 
+            // keybindColumn
+            // 
+            this.keybindColumn.HeaderText = "Keybind";
+            this.keybindColumn.Name = "keybindColumn";
+            this.keybindColumn.ReadOnly = true;
+            // 
             // DemonologyHotkeysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(665, 388);
+            this.Controls.Add(this.abilitiesDataGridView);
             this.Controls.Add(this.bAccept);
             this.Controls.Add(this.bSummonFelguard);
             this.Controls.Add(this.bDemonwrath);
@@ -134,6 +168,8 @@
             this.Name = "DemonologyHotkeysForm";
             this.Text = "DemonologyHotkeysForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DemonologyHotkeysForm_FormClosed);
+            this.Load += new System.EventHandler(this.DemonologyHotkeysForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.abilitiesDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,5 +184,8 @@
         private System.Windows.Forms.Button bDemonwrath;
         private System.Windows.Forms.Button bSummonFelguard;
         private System.Windows.Forms.Button bAccept;
+        private System.Windows.Forms.DataGridView abilitiesDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn abilityNameColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn keybindColumn;
     }
 }

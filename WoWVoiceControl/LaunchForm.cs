@@ -12,6 +12,7 @@ using System.Diagnostics;
 using System.Speech.Recognition;
 using System.Runtime.InteropServices;
 using WindowsInput;
+using WoWVoiceControl.Classes;
 
 namespace WoWVoiceControl
 {
@@ -53,17 +54,12 @@ namespace WoWVoiceControl
 
         private void bWarlockLaunch_Click(object sender, EventArgs e)
         {
-            WarlockBaseForm warlockForm = new WarlockBaseForm();
-            warlockForm.Show();
-            this.Hide();
+            FormProvider.BaseAbilityForm(Classes.Classes.Warlock).Show();
         }
 
         private void bDemonHunterLaunch_Click(object sender, EventArgs e)
         {
-            DemonHunterBaseForm demonhunterForm = FormProvider.DemonHunterBaseForm;
-            demonhunterForm.Show();
-
-            Hide();
+            FormProvider.BaseAbilityForm(Classes.Classes.DemonHunter).Show();
         }
 
         private void LaunchForm_Load(object sender, EventArgs e)

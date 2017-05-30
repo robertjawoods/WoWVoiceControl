@@ -81,5 +81,15 @@ namespace WoWVoiceControl.ClassForms.Warlock.Specs
         {
             FormProvider.WarlockBaseForm.Show();
         }
+
+        private void DemonologyHotkeysForm_Load(object sender, EventArgs e)
+        {
+            foreach (string ability in WarlockGrammar.DemonologyWarlockAbilities)
+            {
+                int index = abilitiesDataGridView.Rows.Add();
+
+                abilitiesDataGridView.Rows[index].Cells["abilityNameColumn"].Value = ability;
+            }
+        }
     }
 }

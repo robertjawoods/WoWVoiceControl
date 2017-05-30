@@ -68,31 +68,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseAbilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseAbilityForm.Designer.cs">
+      <DependentUpon>BaseAbilityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ClassFactory.cs" />
+    <Compile Include="Classes\DemonHunter.cs" />
+    <Compile Include="Classes\Warlock.cs" />
     <Compile Include="ClassForms\DeathKnightBaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClassForms\DeathKnightBaseForm.Designer.cs">
       <DependentUpon>DeathKnightBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\DemonHunter\DemonHunterBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\DemonHunter\DemonHunterBaseForm.Designer.cs">
-      <DependentUpon>DemonHunterBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\DemonHunter\DemonHunterGrammar.cs" />
-    <Compile Include="ClassForms\DemonHunter\DemonHunterHotkeys.cs" />
-    <Compile Include="ClassForms\DemonHunter\Specs\HavocHotkeysForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\DemonHunter\Specs\HavocHotkeysForm.Designer.cs">
-      <DependentUpon>HavocHotkeysForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\DemonHunter\Specs\VengeanceHotkeysForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\DemonHunter\Specs\VengeanceHotkeysForm.Designer.cs">
-      <DependentUpon>VengeanceHotkeysForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassForms\DruidBaseForm.cs">
       <SubType>Form</SubType>
@@ -212,18 +201,18 @@
     </Compile>
     <Compile Include="ClassForms\Mage\MageGrammar.cs" />
     <Compile Include="ClassForms\Mage\MageHotkeys.cs" />
-    <Compile Include="WoWClass.cs" />
+    <Compile Include="Classes\WoWClass.cs" />
+    <Compile Include="SpecAbilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecAbilityForm.Designer.cs">
+      <DependentUpon>SpecAbilityForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseAbilityForm.resx">
+      <DependentUpon>BaseAbilityForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassForms\DeathKnightBaseForm.resx">
       <DependentUpon>DeathKnightBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\DemonHunter\DemonHunterBaseForm.resx">
-      <DependentUpon>DemonHunterBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\DemonHunter\Specs\HavocHotkeysForm.resx">
-      <DependentUpon>HavocHotkeysForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\DemonHunter\Specs\VengeanceHotkeysForm.resx">
-      <DependentUpon>VengeanceHotkeysForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassForms\DruidBaseForm.resx">
       <DependentUpon>DruidBaseForm.cs</DependentUpon>
@@ -287,6 +276,9 @@
     </Compile>
     <EmbeddedResource Include="ClassForms\Mage\Specs\ArcaneHotkeysForm.resx">
       <DependentUpon>ArcaneHotkeysForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecAbilityForm.resx">
+      <DependentUpon>SpecAbilityForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

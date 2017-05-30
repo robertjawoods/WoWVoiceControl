@@ -1,4 +1,6 @@
-﻿namespace WoWVoiceControl.ClassForms.Warlock
+﻿using WoWVoiceControl.Classes;
+
+namespace WoWVoiceControl.ClassForms.Warlock
 {
     public class WarlockHotkeys : WoWClass
     {

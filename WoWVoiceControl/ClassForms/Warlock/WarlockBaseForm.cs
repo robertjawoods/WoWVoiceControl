@@ -119,8 +119,8 @@ namespace WoWVoiceControl
             string key;
             try
             {
-                hotkeyList.ClassAbilityDictionary.TryGetValue(e.Result.Text, out key);
-                SendKeys.Send(key);
+              //  hotkeyList.ClassAbilityDictionary.TryGetValue(e.Result.Text, out key);
+               // SendKeys.Send(key);
             }
             catch
             {

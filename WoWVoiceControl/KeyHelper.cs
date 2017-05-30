@@ -66,7 +66,7 @@ namespace WoWVoiceControl
                 int index = keysPressed.IndexOf(k);
 
                 if (index == (keysPressed.Count - 1))
-                    continue;
+                    break;
 
                 keyBind.Append(" + ");
             }
@@ -105,7 +105,6 @@ namespace WoWVoiceControl
 
                     default:
                         {
-                            
                             result.Append("{" + final + "}");
                             break;
                         }

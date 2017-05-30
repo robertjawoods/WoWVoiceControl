@@ -1,7 +1,6 @@
-﻿using WoWVoiceControl.ClassForms.DemonHunter.Specs;
+﻿using WoWVoiceControl.Classes;
 using WoWVoiceControl.ClassForms.Warlock;
 using WoWVoiceControl.ClassForms.Warlock.Specs;
-using WoWVoiceControl.SpecForms;
 
 namespace WoWVoiceControl
 {
@@ -10,29 +9,25 @@ namespace WoWVoiceControl
     /// </summary>
     public static class FormProvider
     {
-        private static DemonHunterBaseForm demonHunterBaseForm = null;
-        //  Return form if not null, else return form = new Form() -- ensures there is only ever one instance
-        public static DemonHunterBaseForm DemonHunterBaseForm => demonHunterBaseForm ?? (demonHunterBaseForm = new DemonHunterBaseForm());
 
-        private static HavocHotkeysForm havocHotkeysForm = null;
-        public static HavocHotkeysForm HavocHotkeysForm(DemonHunterHotkeys keys)
+        private static BaseAbilityForm baseAbilityInstance = null;
+
+        public static BaseAbilityForm BaseAbilityForm(Classes.Classes wowClass)
         {
-            // If the form is not null and is disposed then the form would have been closed. Set it to null.
-            if (havocHotkeysForm != null && havocHotkeysForm.IsDisposed)
-                havocHotkeysForm = null;
+            if (baseAbilityInstance != null && baseAbilityInstance.IsDisposed)
+                baseAbilityInstance = null;
 
-            return havocHotkeysForm ?? (havocHotkeysForm = new HavocHotkeysForm(keys));
+            return baseAbilityInstance ?? (baseAbilityInstance = new WoWVoiceControl.BaseAbilityForm(ClassFactory.GetClass(wowClass)));
         }
 
-        private static VengeanceHotkeysForm vengeanceHotkeysForm = null;
-        public static VengeanceHotkeysForm VengeanceHotkeysForm(DemonHunterHotkeys keys)
+        private static SpecAbilityForm specAbilityInstance = null;
+        public static SpecAbilityForm SpecAbilityForm(WoWClass wowClass, string specName)
         {
-            if (vengeanceHotkeysForm != null && vengeanceHotkeysForm.IsDisposed)
-                vengeanceHotkeysForm = null;
+            if (specAbilityInstance != null && specAbilityInstance.IsDisposed)
+                specAbilityInstance = null;
 
-            return vengeanceHotkeysForm ?? (vengeanceHotkeysForm = new VengeanceHotkeysForm(keys));
+            return specAbilityInstance ?? (specAbilityInstance = new WoWVoiceControl.SpecAbilityForm(wowClass, specName));
         }
-
 
         private static WarlockBaseForm warlockBaseForm = null;
         public static WarlockBaseForm WarlockBaseForm => warlockBaseForm ?? (warlockBaseForm = new WarlockBaseForm());
