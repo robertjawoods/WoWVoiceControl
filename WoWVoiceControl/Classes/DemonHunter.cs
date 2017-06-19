@@ -1,4 +1,6 @@
-﻿namespace WoWVoiceControl.Classes
+﻿using WoWVoiceControl.Properties;
+
+namespace WoWVoiceControl.Classes
 {
     public class DemonHunter : WoWClass
     {
@@ -10,6 +12,7 @@
             classSpecialisationAbilityNames.Add("Havoc", new[] { "Fel Barrage", "Fel Eruption", "Nemesis", "Netherwalk", "Chaos Strike", "Felblade", "Blade Dance", "Blur", "Chaos Nova", "Eye Beam", "Fel Rush", "Soul Carver", "Vengeful Retreat", "Fury of the Illidari", "Demon's Bite" });
 
             className = "Demon Hunter";
+            ClassIcon = Resources.dh_icon;
         }
     }
 }

@@ -9,10 +9,11 @@ namespace WoWVoiceControl
 {
     public static class GenericHotkeys
     {
-        public static Dictionary<String, String> GenericKeys = new Dictionary<string, string>();
-    public static Choices GenerateGenericChoices()
+        public static Dictionary<string, string> GenericKeys = new Dictionary<string, string>();
+
+        public static Choices GenerateGenericChoices()
         {
-            Choices genericChoices = new Choices("auto run", "eat", "target", "mount");
+            Choices genericChoices = new Choices("Auto Aun", "Eat", "Target", "Mount");
             return genericChoices;
         }
     }

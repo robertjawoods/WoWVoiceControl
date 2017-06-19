@@ -1,6 +1,6 @@
 ﻿using WoWVoiceControl.Classes;
-using WoWVoiceControl.ClassForms.Warlock;
-using WoWVoiceControl.ClassForms.Warlock.Specs;
+//using WoWVoiceControl.ClassForms.Warlock;
+//using WoWVoiceControl.ClassForms.Warlock.Specs;
 
 namespace WoWVoiceControl
 {
@@ -29,34 +29,34 @@ namespace WoWVoiceControl
             return specAbilityInstance ?? (specAbilityInstance = new WoWVoiceControl.SpecAbilityForm(wowClass, specName));
         }
 
-        private static WarlockBaseForm warlockBaseForm = null;
-        public static WarlockBaseForm WarlockBaseForm => warlockBaseForm ?? (warlockBaseForm = new WarlockBaseForm());
+        //private static WarlockBaseForm warlockBaseForm = null;
+        //public static WarlockBaseForm WarlockBaseForm => warlockBaseForm ?? (warlockBaseForm = new WarlockBaseForm());
 
-        private static AfflictionHotkeysForm afflictionHotkeysForm = null;
-        public static AfflictionHotkeysForm AfflictionHotkeysForm(WarlockHotkeys keys)
-        {
-            if (afflictionHotkeysForm != null && afflictionHotkeysForm.IsDisposed)
-                afflictionHotkeysForm = null;
+        //private static AfflictionHotkeysForm afflictionHotkeysForm = null;
+        //public static AfflictionHotkeysForm AfflictionHotkeysForm(WarlockHotkeys keys)
+        //{
+        //    if (afflictionHotkeysForm != null && afflictionHotkeysForm.IsDisposed)
+        //        afflictionHotkeysForm = null;
 
-            return afflictionHotkeysForm ?? (afflictionHotkeysForm = new AfflictionHotkeysForm(keys));
-        }
+        //    return afflictionHotkeysForm ?? (afflictionHotkeysForm = new AfflictionHotkeysForm(keys));
+        //}
 
-        private static DemonologyHotkeysForm demonologyHotKeysForm = null;
-        public static DemonologyHotkeysForm DemonologyHotkeysForm(WarlockHotkeys hotkeys)
-        {
-            if (demonologyHotKeysForm != null && demonologyHotKeysForm.IsDisposed)
-                demonologyHotKeysForm = null;
+        //private static DemonologyHotkeysForm demonologyHotKeysForm = null;
+        //public static DemonologyHotkeysForm DemonologyHotkeysForm(WarlockHotkeys hotkeys)
+        //{
+        //    if (demonologyHotKeysForm != null && demonologyHotKeysForm.IsDisposed)
+        //        demonologyHotKeysForm = null;
 
-            return demonologyHotKeysForm ?? (demonologyHotKeysForm = new DemonologyHotkeysForm(hotkeys));
-        }
+        //    return demonologyHotKeysForm ?? (demonologyHotKeysForm = new DemonologyHotkeysForm(hotkeys));
+        //}
 
-        private static DestructionHotkeysForm destructionHotKeysForm = null;
-        public static DestructionHotkeysForm DestructionHotkeysForm(WarlockHotkeys keys)
-        {
-            if (destructionHotKeysForm != null && destructionHotKeysForm.IsDisposed)
-                destructionHotKeysForm = null;
+        //private static DestructionHotkeysForm destructionHotKeysForm = null;
+        //public static DestructionHotkeysForm DestructionHotkeysForm(WarlockHotkeys keys)
+        //{
+        //    if (destructionHotKeysForm != null && destructionHotKeysForm.IsDisposed)
+        //        destructionHotKeysForm = null;
 
-            return destructionHotKeysForm ?? (destructionHotKeysForm = new DestructionHotkeysForm(keys));
-        }
+        //    return destructionHotKeysForm ?? (destructionHotKeysForm = new DestructionHotkeysForm(keys));
+        //}
     }
 }

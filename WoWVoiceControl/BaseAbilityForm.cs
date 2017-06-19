@@ -36,6 +36,8 @@ namespace WoWVoiceControl
 
             dgvAbilities.KeyDown += dgvAbilities_KeyDown;
 
+            this.Icon = @class.ClassIcon;
+
             dgvAbilities.CellEnter += dgvAbilities_CellEnter;
             dgvAbilities.CellLeave += dgvAbilities_CellLeave;
         }

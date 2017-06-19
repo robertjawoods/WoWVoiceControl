@@ -20,22 +20,22 @@ namespace WoWVoiceControl
 
         private void bAutoRun_KeyPress(object sender, KeyPressEventArgs e)
         {
-            string key = e.KeyChar.ToString();
-            key = GenerateKeyStrings.generateKeyString(key);
-            GenericHotkeys.GenericKeys.Add("auto run", key);
+            //string key = e.KeyChar.ToString();
+            //key = GenerateKeyStrings.generateKeyString(key);
+            //GenericHotkeys.GenericKeys.Add("auto run", key);
         }
         private void bEat_KeyPress(object sender, KeyPressEventArgs e)
         {
-            string key = e.KeyChar.ToString();
-            key = GenerateKeyStrings.generateKeyString(key);
-            GenericHotkeys.GenericKeys.Add("eat", key);
+            //string key = e.KeyChar.ToString();
+            //key = GenerateKeyStrings.generateKeyString(key);
+            //GenericHotkeys.GenericKeys.Add("eat", key);
         }
 
         private void bMount_KeyPress(object sender, KeyPressEventArgs e)
         {
-            string key = e.KeyChar.ToString();
-            key = GenerateKeyStrings.generateKeyString(key);
-            GenericHotkeys.GenericKeys.Add("Mount", key);
+            //string key = e.KeyChar.ToString();
+            //key = GenerateKeyStrings.generateKeyString(key);
+            //GenericHotkeys.GenericKeys.Add("Mount", key);
         }
     }
 }

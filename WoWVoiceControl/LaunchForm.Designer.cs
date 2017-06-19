@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaunchForm));
             this.bDemonHunterLaunch = new System.Windows.Forms.Button();
             this.bHunterLaunch = new System.Windows.Forms.Button();
             this.bShamanLaunch = new System.Windows.Forms.Button();
@@ -70,6 +71,7 @@
             this.bShamanLaunch.TabIndex = 5;
             this.bShamanLaunch.Text = "Shaman";
             this.bShamanLaunch.UseVisualStyleBackColor = true;
+            this.bShamanLaunch.Click += new System.EventHandler(this.bShamanLaunch_Click);
             // 
             // bMageLaunch
             // 
@@ -107,6 +109,7 @@
             this.bDeathKnightLaunch.TabIndex = 9;
             this.bDeathKnightLaunch.Text = "Death Knight";
             this.bDeathKnightLaunch.UseVisualStyleBackColor = true;
+            this.bDeathKnightLaunch.Click += new System.EventHandler(this.bDeathKnightLaunch_Click);
             // 
             // bPriestLaunch
             // 
@@ -156,7 +159,7 @@
             // 
             // bGenericHotkeys
             // 
-            this.bGenericHotkeys.Location = new System.Drawing.Point(93, 197);
+            this.bGenericHotkeys.Location = new System.Drawing.Point(88, 197);
             this.bGenericHotkeys.Name = "bGenericHotkeys";
             this.bGenericHotkeys.Size = new System.Drawing.Size(109, 23);
             this.bGenericHotkeys.TabIndex = 15;
@@ -168,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 231);
             this.Controls.Add(this.bGenericHotkeys);
             this.Controls.Add(this.bRogueLaunch);
             this.Controls.Add(this.bWarlockLaunch);
@@ -182,8 +185,9 @@
             this.Controls.Add(this.bShamanLaunch);
             this.Controls.Add(this.bHunterLaunch);
             this.Controls.Add(this.bDemonHunterLaunch);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LaunchForm";
-            this.Text = "Class Navigation Form";
+            this.Text = " Select Class";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LaunchForm_FormClosed);
             this.Load += new System.EventHandler(this.LaunchForm_Load);
             this.ResumeLayout(false);

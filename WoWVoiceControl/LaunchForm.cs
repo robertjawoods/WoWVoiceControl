@@ -36,9 +36,7 @@ namespace WoWVoiceControl
         
         private void bMageLaunch_Click(object sender, EventArgs e)
         {
-            MageBaseForm mageForm = new MageBaseForm();
-            mageForm.Show();
-            this.Hide();
+            FormProvider.BaseAbilityForm(Classes.Classes.Mage).Show();
         }
 
         private void bGenericHotkeys_Click(object sender, EventArgs e)
@@ -65,6 +63,16 @@ namespace WoWVoiceControl
         private void LaunchForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bDeathKnightLaunch_Click(object sender, EventArgs e)
+        {
+            FormProvider.BaseAbilityForm(Classes.Classes.DeathKnight).Show();
+        }
+
+        private void bShamanLaunch_Click(object sender, EventArgs e)
+        {
+            FormProvider.BaseAbilityForm(Classes.Classes.Shaman).Show();
         }
     }
 }

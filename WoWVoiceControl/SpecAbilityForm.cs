@@ -26,6 +26,8 @@ namespace WoWVoiceControl
             this.specName = specName;
             this.specAbilities = @class.ClassSpecialisationAbilityNames[specName];
 
+            this.Icon = @class.ClassIcon;
+
 
             // If the ability name column is entered, deseslect. Ability name doesn't have to be selected.
             dgvAbilities.CellEnter += (sender, e) => { if (e.ColumnIndex == 0) (sender as DataGridView).ClearSelection(); };
@@ -48,6 +50,9 @@ namespace WoWVoiceControl
                 int index = dgvAbilities.Rows.Add();
 
                 dgvAbilities.Rows[index].Cells["abilityNameColumn"].Value = ability;
+
+                if (@class.ClassAbilityBindings.ContainsKey(ability))
+                    dgvAbilities.Rows[index].Cells["keybindColumn"].Value = KeyHelper.GetFormattedKeyString(@class.ClassAbilityBindings[ability]);
             }
         }
 
@@ -95,6 +100,7 @@ namespace WoWVoiceControl
                 @class.AddHotKey(ability, keybind);
             }
 
+            Close();
         }
     }
 }

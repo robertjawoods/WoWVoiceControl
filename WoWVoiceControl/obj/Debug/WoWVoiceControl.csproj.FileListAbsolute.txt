@@ -60,3 +60,17 @@ C:\Users\Joe\Documents\GitHub\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoice
 C:\Users\Joe\Documents\GitHub\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.Properties.Resources.resources
 C:\Users\Joe\Documents\GitHub\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.SpecForms.ArcaneHotkeysForm.resources
 C:\Users\Joe\Documents\GitHub\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.csproj.GenerateResource.Cache
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\bin\Debug\WoWVoiceControl.exe.config
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.exe
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.pdb
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\bin\Debug\WoWVoiceControl.exe
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\bin\Debug\WoWVoiceControl.pdb
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\bin\Debug\WindowsInput.dll
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\bin\Debug\WindowsInput.xml
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.csprojResolveAssemblyReference.cache
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.BaseAbilityForm.resources
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.GenericHotkeysForm.resources
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.LaunchForm.resources
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.Properties.Resources.resources
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.SpecAbilityForm.resources
+C:\Users\rober\Source\Repos\WoWVoiceControl\WoWVoiceControl\obj\Debug\WoWVoiceControl.csproj.GenerateResource.Cache

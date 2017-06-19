@@ -61,7 +61,14 @@ namespace WoWVoiceControl
 
             foreach (Key k in keysPressed)
             {
-                keyBind.Append(k.ToString());
+                string key = k.ToString();
+
+                if (key.Contains("Left"))
+                    key = key.Remove(0, 4);
+                else if (key.Contains("Right"))
+                    key = key.Remove(0, 5);
+
+                keyBind.Append(key);
 
                 int index = keysPressed.IndexOf(k);
 
@@ -77,7 +84,7 @@ namespace WoWVoiceControl
         /// <summary>
         /// Gets a key string from a formatted string.
         /// </summary>
-        /// <remarks>"LeftCtrl + T" becomes "^{T}"</remarks>
+        /// <remarks>"Ctrl + T" becomes "^{T}"</remarks>
         /// <param name="formattedKeyString">The formatted key string</param>
         /// <returns>A key string ready to be passed to SendKeys</returns>
         public static string GetKeyString(string formattedKeyString)
@@ -99,8 +106,16 @@ namespace WoWVoiceControl
 
                 switch (s)
                 {
-                    case "LeftCtrl":
+                    case "Ctrl":
                         result.Append("^");
+                        break;
+
+                    case "Shift":
+                        result.Append("+");
+                        break;
+
+                    case "Alt":
+                        result.Append("%");
                         break;
 
                     default:
@@ -113,6 +128,40 @@ namespace WoWVoiceControl
                 
 
             return result.ToString();
+        }
+
+        public static string GetFormattedKeyString(string keyString)
+        {
+            string keys = keyString.Replace("{", string.Empty).Replace("}", string.Empty);
+
+            StringBuilder formattedKeyString = new StringBuilder();
+
+            for (int i = 0; i < keys.Length; i++)
+            {
+                switch (keys[i])
+                {
+                    case '+':
+                        formattedKeyString.Append("Shift ");
+                        break;
+
+                    case '%':
+                        formattedKeyString.Append("Alt ");
+                        break;
+
+                    case '^':
+                        formattedKeyString.Append("Ctrl ");
+                        break;
+
+                    default:
+                        formattedKeyString.Append($"{keys[i]} ");
+                        break;
+                }
+
+                if (i != keys.Length - 1)
+                    formattedKeyString.Append("+ ");
+            }
+
+            return formattedKeyString.ToString();
         }
 
     }

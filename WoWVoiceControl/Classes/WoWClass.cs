@@ -5,6 +5,7 @@ using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 using System.Speech.Recognition;
+using System.Drawing;
 
 namespace WoWVoiceControl.Classes
 {
@@ -16,7 +17,9 @@ namespace WoWVoiceControl.Classes
         private Dictionary<string, string> classAbilityBindings;
 
         protected string className;
-        public string ClassName => className; 
+        public string ClassName => className;
+
+        public Icon ClassIcon { get; protected set; }
 
         public WoWClass()
         {
@@ -33,6 +36,9 @@ namespace WoWVoiceControl.Classes
         {
             try
             {
+                if (classAbilityBindings.ContainsKey(abilityName))
+                    classAbilityBindings.Remove(abilityName);
+
                classAbilityBindings.Add(abilityName, hotKeyString);
             }
             catch

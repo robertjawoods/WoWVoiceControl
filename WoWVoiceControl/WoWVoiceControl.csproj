@@ -75,60 +75,19 @@
       <DependentUpon>BaseAbilityForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\ClassFactory.cs" />
+    <Compile Include="Classes\DeathKnight.cs" />
     <Compile Include="Classes\DemonHunter.cs" />
+    <Compile Include="Classes\Druid.cs" />
+    <Compile Include="Classes\Hunter.cs" />
+    <Compile Include="Classes\Mage.cs" />
+    <Compile Include="Classes\Monk.cs" />
+    <Compile Include="Classes\Paladin.cs" />
+    <Compile Include="Classes\Priest.cs" />
+    <Compile Include="Classes\Rogue.cs" />
+    <Compile Include="Classes\Shaman.cs" />
     <Compile Include="Classes\Warlock.cs" />
-    <Compile Include="ClassForms\DeathKnightBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\DeathKnightBaseForm.Designer.cs">
-      <DependentUpon>DeathKnightBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\DruidBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\DruidBaseForm.Designer.cs">
-      <DependentUpon>DruidBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\HunterBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\HunterBaseForm.Designer.cs">
-      <DependentUpon>HunterBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\Mage\Specs\FireHotkeysForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\Mage\Specs\FireHotkeysForm.Designer.cs">
-      <DependentUpon>FireHotkeysForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\RogueBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\RogueBaseForm.Designer.cs">
-      <DependentUpon>RogueBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\Warlock\WarlockGrammar.cs" />
-    <Compile Include="ClassForms\Warlock\WarlockHotkeys.cs" />
-    <Compile Include="ClassForms\Warlock\Specs\AfflictionHotkeysForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\Warlock\Specs\AfflictionHotkeysForm.Designer.cs">
-      <DependentUpon>AfflictionHotkeysForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\Warlock\Specs\DemonologyHotkeysForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\Warlock\Specs\DemonologyHotkeysForm.Designer.cs">
-      <DependentUpon>DemonologyHotkeysForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\Warlock\Specs\DestructionHotkeysForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\Warlock\Specs\DestructionHotkeysForm.Designer.cs">
-      <DependentUpon>DestructionHotkeysForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Classes\Warrior.cs" />
     <Compile Include="FormProvider.cs" />
-    <Compile Include="GenerateKeyStrings.cs" />
     <Compile Include="GenericHotkeys.cs" />
     <Compile Include="GenericHotkeysForm.cs">
       <SubType>Form</SubType>
@@ -143,64 +102,8 @@
     <Compile Include="LaunchForm.Designer.cs">
       <DependentUpon>LaunchForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassForms\Mage\MageBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\Mage\MageBaseForm.Designer.cs">
-      <DependentUpon>MageBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\MonkBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\MonkBaseForm.Designer.cs">
-      <DependentUpon>MonkBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\PaladinBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\PaladinBaseForm.Designer.cs">
-      <DependentUpon>PaladinBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\PriestBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\PriestBaseForm.Designer.cs">
-      <DependentUpon>PriestBaseForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ClassForms\ShamanBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\ShamanBaseForm.Designer.cs">
-      <DependentUpon>ShamanBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\Warlock\WarlockBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\Warlock\WarlockBaseForm.Designer.cs">
-      <DependentUpon>WarlockBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\WarriorBaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\WarriorBaseForm.Designer.cs">
-      <DependentUpon>WarriorBaseForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\Mage\Specs\ArcaneHotkeysForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\Mage\Specs\ArcaneHotkeysForm.Designer.cs">
-      <DependentUpon>ArcaneHotkeysForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\Mage\Specs\FrostHotkeysForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassForms\Mage\Specs\FrostHotkeysForm.Designer.cs">
-      <DependentUpon>FrostHotkeysForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClassForms\Mage\MageGrammar.cs" />
-    <Compile Include="ClassForms\Mage\MageHotkeys.cs" />
     <Compile Include="Classes\WoWClass.cs" />
     <Compile Include="SpecAbilityForm.cs">
       <SubType>Form</SubType>
@@ -210,54 +113,6 @@
     </Compile>
     <EmbeddedResource Include="BaseAbilityForm.resx">
       <DependentUpon>BaseAbilityForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\DeathKnightBaseForm.resx">
-      <DependentUpon>DeathKnightBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\DruidBaseForm.resx">
-      <DependentUpon>DruidBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\HunterBaseForm.resx">
-      <DependentUpon>HunterBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\Mage\MageBaseForm.resx">
-      <DependentUpon>MageBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\Mage\Specs\FireHotkeysForm.resx">
-      <DependentUpon>FireHotkeysForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\Mage\Specs\FrostHotkeysForm.resx">
-      <DependentUpon>FrostHotkeysForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\MonkBaseForm.resx">
-      <DependentUpon>MonkBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\PaladinBaseForm.resx">
-      <DependentUpon>PaladinBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\PriestBaseForm.resx">
-      <DependentUpon>PriestBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\RogueBaseForm.resx">
-      <DependentUpon>RogueBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\ShamanBaseForm.resx">
-      <DependentUpon>ShamanBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\Warlock\Specs\AfflictionHotkeysForm.resx">
-      <DependentUpon>AfflictionHotkeysForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\Warlock\Specs\DemonologyHotkeysForm.resx">
-      <DependentUpon>DemonologyHotkeysForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\Warlock\Specs\DestructionHotkeysForm.resx">
-      <DependentUpon>DestructionHotkeysForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\Warlock\WarlockBaseForm.resx">
-      <DependentUpon>WarlockBaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\WarriorBaseForm.resx">
-      <DependentUpon>WarriorBaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenericHotkeysForm.resx">
       <DependentUpon>GenericHotkeysForm.cs</DependentUpon>
@@ -273,10 +128,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ClassForms\Mage\Specs\ArcaneHotkeysForm.resx">
-      <DependentUpon>ArcaneHotkeysForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SpecAbilityForm.resx">
       <DependentUpon>SpecAbilityForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,7 +147,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
@@ -306,6 +161,39 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dh-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dk-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pala-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pri-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ro-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sham-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\war-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\druid-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
