@@ -57,7 +57,7 @@ namespace WoWVoiceControl
 
         private void bDemonHunterLaunch_Click(object sender, EventArgs e)
         {
-            FormProvider.BaseAbilityForm(Classes.Classes.DemonHunter).Show();
+            
         }
 
         private void LaunchForm_Load(object sender, EventArgs e)
@@ -73,6 +73,11 @@ namespace WoWVoiceControl
         private void bShamanLaunch_Click(object sender, EventArgs e)
         {
             FormProvider.BaseAbilityForm(Classes.Classes.Shaman).Show();
+        }
+
+        private void dhPictureBox_Click(object sender, EventArgs e)
+        {
+            FormProvider.BaseAbilityForm(Classes.Classes.DemonHunter).Show();
         }
     }
 }

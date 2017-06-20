@@ -195,6 +195,39 @@
   <ItemGroup>
     <None Include="Resources\druid-icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mage_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shaman_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warlock_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warrior_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\priest_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hunter_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\druid_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paladin_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deathknight_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rogue_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demonhunter.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

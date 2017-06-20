@@ -61,6 +61,26 @@ namespace WoWVoiceControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deathknight_15 {
+            get {
+                object obj = ResourceManager.GetObject("deathknight_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap demonhunter {
+            get {
+                object obj = ResourceManager.GetObject("demonhunter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon dh_icon {
@@ -91,6 +111,16 @@ namespace WoWVoiceControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap druid_22 {
+            get {
+                object obj = ResourceManager.GetObject("druid_22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon druid_icon {
@@ -107,6 +137,16 @@ namespace WoWVoiceControl.Properties {
             get {
                 object obj = ResourceManager.GetObject("h_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hunter_4 {
+            get {
+                object obj = ResourceManager.GetObject("hunter_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -141,12 +181,32 @@ namespace WoWVoiceControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mage_13 {
+            get {
+                object obj = ResourceManager.GetObject("mage_13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon pala_icon {
             get {
                 object obj = ResourceManager.GetObject("pala_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paladin_10 {
+            get {
+                object obj = ResourceManager.GetObject("paladin_10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -161,12 +221,32 @@ namespace WoWVoiceControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap priest_12 {
+            get {
+                object obj = ResourceManager.GetObject("priest_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon ro_icon {
             get {
                 object obj = ResourceManager.GetObject("ro_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rogue_8 {
+            get {
+                object obj = ResourceManager.GetObject("rogue_8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -181,12 +261,42 @@ namespace WoWVoiceControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shaman_5 {
+            get {
+                object obj = ResourceManager.GetObject("shaman_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon war_icon {
             get {
                 object obj = ResourceManager.GetObject("war_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warlock_21 {
+            get {
+                object obj = ResourceManager.GetObject("warlock_21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warrior_11 {
+            get {
+                object obj = ResourceManager.GetObject("warrior_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
